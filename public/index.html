@@ -40,10 +40,11 @@
         return;
       }
 
-      const pdfUrl = `/pdfs/${id}.pdf`;
+      const pdfUrl = `/${id}.pdf`; // ✅ Corrected path
       const viewer = document.getElementById('viewer');
       viewer.innerHTML = `<iframe src="${pdfUrl}"></iframe>`;
     }
   </script>
 </body>
 </html>
+
